@@ -205,11 +205,11 @@ See Our Memories 📸
 
 <div class="gallery">
 
-<img src="1000056990.jpg">
+    <img src="1.jpg" alt="Memory 1">
 
-<img src="a7bce164-e277-471c-89c2-110a611dee90-1_all_9971.jpg">
+    <img src="2.jpg" alt="Memory 2">
 
-<img src="1000056342.jpg">
+    <img src="3.jpg" alt="Memory 3">
 
 </div>
 
@@ -320,14 +320,24 @@ setTimeout(typing,70);
 }
 
 typing();
+const music = document.getElementById("bgMusic");
 
+function toggleMusic(){
+
+if(music.paused){
+    music.play();
+}else{
+    music.pause();
+}
+
+}
 function showLetter(){
 
 document.getElementById("letter").style.display="block";
 
 }
 
-const startDate = new Date("2024-01-01");
+const startDate = new Date("2025 to ♾️);
 
 function updateTimer(){
 
@@ -593,10 +603,12 @@ You are the best thing that ever happened to me.
 </section>
 
 <!-- Background Music -->
-<audio autoplay loop>
-<source src="your-song.mp3" type="audio/mpeg">
+<audio id="bgMusic" autoplay loop>
+    <source src="ratan.mp3" type="audio/mpeg">
 </audio>
-
+<button class="btn" onclick="toggleMusic()">
+🎵 Play / Pause Music
+</button>
 <script>
 
 // Typing Effect
@@ -615,7 +627,7 @@ setTimeout(typing,70);
 typing();
 
 // Relationship Timer
-const startDate = new Date("2025-01-01");
+const startDate = new Date("2025 to ♾️");
 
 function updateTimer(){
 
